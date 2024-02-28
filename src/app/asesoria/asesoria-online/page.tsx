@@ -1,0 +1,15 @@
+import React from "react";
+
+export default function AsesoriaOnline() {
+	return (
+		<div className="w-full max-w-[700px] text-center mx-auto pt-5 [&>h1]:text-2xl [&>h1]:uppercase [&>h1]:font-bold [&>p]:mt-1 [&>p]:text-md">
+			<h1>Asesoría Online</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+				voluptates praesentium, quidem fuga magnam quos sapiente odio impedit
+				repellat hic blanditiis voluptatem temporibus labore consectetur
+				voluptas eius ex voluptatibus adipisci?
+			</p>
+		</div>
+	);
+}
