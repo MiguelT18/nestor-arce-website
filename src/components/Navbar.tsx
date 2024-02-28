@@ -4,96 +4,42 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Logo from "@/public/nestor_logo.png";
 import Link from "next/link";
+import "iconify-icon";
 
 export default function NavbarComponent() {
-	const [open, setOpen] = useState(false);
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		function handleResize() {
-			setIsMobile(window.innerWidth <= 768);
-		}
-
-		window.addEventListener("resize", handleResize);
-
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
-	}, []);
+	const [itemOpen, setItemOpen] = useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const toggleMenu = () => {
-		setOpen(!open);
+		setIsMenuOpen(!isMenuOpen);
 	};
 
 	const closeMenu = () => {
-		setOpen(false);
+		setIsMenuOpen(false);
 	};
 
+	useEffect(() => {
+		if (isMenuOpen) {
+			document.body.classList.add("overflow-hidden");
+		} else {
+			document.body.classList.remove("overflow-hidden");
+		}
+	}, [isMenuOpen]);
+
 	return (
-		<nav className="flex items-center justify-around border-b-2 border-white">
-			<Link href="/">
-				<Image
-					priority={false}
-					width={130}
-					height={130}
-					src={Logo}
-					alt="Brand Logo"
-				/>
-			</Link>
+		<>
+			<nav className="w-full bg-black bg-opacity-30 backdrop-blur-md fixed flex items-center justify-around border-b-2 border-white">
+				<Link href="/">
+					<Image
+						priority={false}
+						width={130}
+						height={130}
+						src={Logo}
+						alt="Brand Logo"
+					/>
+				</Link>
 
-			{isMobile ? (
-				<>
-					{/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-					<button onClick={toggleMenu} className="p-2">
-						{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							className="h-10 w-10"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth={2}
-								d="M4 6h16M4 12h16M4 18h16"
-							/>
-						</svg>
-					</button>
-
-					{open && (
-						<div className="w-full h-full absolute right-0 top-0 bg-[#18181b] text-white rounded-md">
-							<ul className="[&>li]:text-2xl h-full flex flex-col gap-4 items-center justify-center">
-								<li>
-									<Link href="/" onClick={closeMenu}>
-										Inicio
-									</Link>
-								</li>
-								<li>
-									<Link href="/recursos" onClick={closeMenu}>
-										Recursos
-									</Link>
-								</li>
-								<li>
-									<Link href="/asesoria/asesoria-online" onClick={closeMenu}>
-										Asesoría Online
-									</Link>
-								</li>
-								<li>
-									<Link
-										href="/asesoria/asesoria-presencial"
-										onClick={closeMenu}
-									>
-										Asesoría Presencial
-									</Link>
-								</li>
-							</ul>
-						</div>
-					)}
-				</>
-			) : (
-				<ul className="flex gap-2 items-center">
+				<ul className="max-sm:hidden flex gap-2 items-center">
 					<li>
 						<Link
 							href="/"
@@ -111,14 +57,14 @@ export default function NavbarComponent() {
 						</Link>
 					</li>
 					<li
-						onMouseEnter={() => setOpen(true)}
-						onMouseLeave={() => setOpen(false)}
+						onMouseEnter={() => setItemOpen(true)}
+						onMouseLeave={() => setItemOpen(false)}
 					>
 						<ul className="hover:bg-[#3f3f46]/20 block p-2 rounded-md cursor-pointer transition-all">
 							Asesoría
 						</ul>
 
-						{open && (
+						{itemOpen && (
 							<ul className="absolute bg-[#18181b] [&>li]:text-white rounded-md">
 								<li>
 									<Link
@@ -140,7 +86,80 @@ export default function NavbarComponent() {
 						)}
 					</li>
 				</ul>
-			)}
-		</nav>
+
+				{/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+				<button onClick={toggleMenu} className="sm:hidden p-2">
+					{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						className="h-12 w-12"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeWidth={2}
+							d="M4 6h16M4 12h16M4 18h16"
+						/>
+					</svg>
+				</button>
+			</nav>
+
+			<div
+				className={` transform transition-transform duration-300 ease-in-out ${
+					isMenuOpen ? "translate-x-0" : "translate-x-full"
+				} fixed z-50 w-screen h-screen backdrop-blur-md right-0 top-0 bg-[#18181b] bg-opacity-45 text-white rounded-md`}
+			>
+				<button
+					onClick={closeMenu}
+					type="button"
+					className="absolute right-0 mt-10 mr-14"
+				>
+					<iconify-icon icon="material-symbols:close" width="60" height="60" />
+				</button>
+
+				<ul className="[&>li]:text-2xl h-full flex flex-col gap-2 items-center justify-center">
+					<li>
+						<Link className="px-4 py-3 block" href="/" onClick={closeMenu}>
+							Inicio
+						</Link>
+					</li>
+					<li>
+						<Link
+							className="px-4 py-3 block"
+							href="/recursos"
+							onClick={closeMenu}
+						>
+							Recursos
+						</Link>
+					</li>
+					<li>
+						<Link
+							className="px-4 py-3 block"
+							href="/asesoria/asesoria-online"
+							onClick={closeMenu}
+						>
+							Asesoría Online
+						</Link>
+					</li>
+					<li>
+						<Link
+							className="px-4 py-3 block"
+							href="/asesoria/asesoria-presencial"
+							onClick={closeMenu}
+						>
+							Asesoría Presencial
+						</Link>
+					</li>
+				</ul>
+			</div>
+		</>
 	);
 }
+
+// <>
+
+// 	)}
+// </>
