@@ -28,7 +28,7 @@ export default function NavbarComponent() {
 
 	return (
 		<>
-			<nav className="w-full bg-black bg-opacity-30 backdrop-blur-md fixed flex items-center justify-around border-b-2 border-white">
+			<nav className="w-full bg-black bg-opacity-30 backdrop-blur-md fixed flex items-center justify-around boder:border-b-2  boder:border-black border-b-2 border-white">
 				<Link href="/">
 					<Image
 						priority={false}
@@ -39,7 +39,7 @@ export default function NavbarComponent() {
 					/>
 				</Link>
 
-				<ul className="max-sm:hidden flex gap-2 items-center">
+				<ul className="font-medium text-white max-sm:hidden flex gap-2 items-center text-sm">
 					<li>
 						<Link
 							href="/"
@@ -65,7 +65,7 @@ export default function NavbarComponent() {
 						</ul>
 
 						{itemOpen && (
-							<ul className="absolute bg-[#18181b] [&>li]:text-white rounded-md">
+							<ul className="absolute bg-[#18181b] text-white rounded-md">
 								<li>
 									<Link
 										href="/asesoria/asesoria-online"
@@ -88,7 +88,7 @@ export default function NavbarComponent() {
 				</ul>
 
 				{/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-				<button onClick={toggleMenu} className="sm:hidden p-2">
+				<button onClick={toggleMenu} className="text-white sm:hidden p-2">
 					{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ export default function NavbarComponent() {
 					<iconify-icon icon="material-symbols:close" width="60" height="60" />
 				</button>
 
-				<ul className="[&>li]:text-2xl h-full flex flex-col gap-2 items-center justify-center">
+				<ul className="text-white text-lg h-full flex flex-col gap-2 items-center justify-center">
 					<li>
 						<Link className="px-4 py-3 block" href="/" onClick={closeMenu}>
 							Inicio
