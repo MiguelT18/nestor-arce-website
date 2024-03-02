@@ -11,3 +11,16 @@ html[data-theme="light"] {
     background-color: white;
     color: black;
 }
+
+.swiper {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 250px;
+    max-height: 250px;
+}

@@ -2,11 +2,14 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Logo from "@/public/nestor_logo.png";
+import Logo from "@/public/images/nestor_logo.png";
 import Link from "next/link";
+import lib from "@/public/lib/brand_info.json";
 import "iconify-icon";
 
 export default function NavbarComponent() {
+	const homeData = lib.home[0];
+
 	const [itemOpen, setItemOpen] = useState(false);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -28,12 +31,12 @@ export default function NavbarComponent() {
 
 	return (
 		<>
-			<nav className="w-full bg-black bg-opacity-30 backdrop-blur-md fixed flex items-center justify-around boder:border-b-2  boder:border-black border-b-2 border-white">
+			<nav className="w-full h-fit bg-black bg-opacity-30 backdrop-blur-md fixed flex items-center justify-around boder:border-b-2  boder:border-black border-b-2 border-white">
 				<Link href="/">
 					<Image
 						priority={false}
-						width={130}
-						height={130}
+						width={100}
+						height={100}
 						src={Logo}
 						alt="Brand Logo"
 					/>
@@ -45,7 +48,7 @@ export default function NavbarComponent() {
 							href="/"
 							className="hover:bg-[#3f3f46] block p-2 rounded-md transition-all"
 						>
-							Inicio
+							{homeData.title}
 						</Link>
 					</li>
 					<li>
@@ -92,7 +95,7 @@ export default function NavbarComponent() {
 					{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						className="h-12 w-12"
+						className="h-10 w-10"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
@@ -158,8 +161,3 @@ export default function NavbarComponent() {
 		</>
 	);
 }
-
-// <>
-
-// 	)}
-// </>

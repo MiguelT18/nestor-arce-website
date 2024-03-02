@@ -1,0 +1,79 @@
+{
+	"home": [
+		{
+			"title": "Inicio",
+			"url": "/"
+		},
+		{
+			"branding": "Ayudamos a personas y culturistas naturales a alcanzar sus metas de entrenamiento",
+			"about": {
+				"title": "Quién soy?",
+				"description": "Soy tu nuevo entrenador personal y me dedico a mejorar el cuerpo de los ganadores de una manera inimaginable. Cuento con bastantes casos de alumnos de los cuales tuvieron increíbles cambios físicos en un corto tiempo siguiendo mis programas de asesorías. A través de mis años de experiencia y aprendizaje diseñé los programas más efectivos para que las personas mejoren su fisico en el menor tiempo posible."
+			},
+			"social_media": {
+				"title": "Sígueme en mis Redes Sociales",
+				"url": [
+					{
+						"id": 0,
+						"icon": "logos:tiktok-icon",
+						"title": "Instagram",
+						"url": "https://www.instagram.com/nestor_arcen/"
+					},
+					{
+						"id": 1,
+						"icon": "skill-icons:instagram",
+						"title": "TikTok",
+						"url": "https://www.tiktok.com/@nestorcoach"
+					}
+				]
+			},
+			"remarketing": {
+				"title": "Seguramente te encuentras en una de estas situaciones",
+				"card": [
+					{
+						"id": 0,
+						"icon": "mingcute:time-fill",
+						"title": "No tienes tiempo para ir al gimnasio",
+						"description": "No te preocupes, tengo programas de entrenamiento que puedes hacer en casa o en el parque."
+					},
+					{
+						"id": 1,
+						"icon": "game-icons:chicken",
+						"title": "Eres una gallina y no te levantas temprano",
+						"description": "Aún no conoces la importancia de levantarse temprano y por eso sigues siendo el mismo fracasado de siempre."
+					},
+					{
+						"id": 2,
+						"icon": "game-icons:fat",
+						"title": "Sigues perdiendo tu tiempo",
+						"description": "¿Cómo pretendes alcanzar el cuerpo de tus sueños si sigues comiendo la misma basura de siempre...?"
+					}
+				],
+				"cta": {
+					"title": "Mi objetivo es ayudarte a conseguir",
+					"list": [
+						{
+							"id": 0,
+							"icon": "arcticons:lets-go-fitness",
+							"title": "Un cuerpo más estético"
+						},
+						{
+							"id": 1,
+							"icon": "icon-park-outline:fitness",
+							"title": "Más fuerza y resistencia"
+						},
+						{
+							"id": 2,
+							"icon": "arcticons:homewizard-energy",
+							"title": "Más energía y vitalidad"
+						}
+					]
+				}
+			},
+			"testimonials": {
+				"name": "Ana María",
+				"description": "Gracias a los programas de entrenamiento de Nestor, he logrado tener un cuerpo más estético y saludable. Ahora me siento más segura y feliz conmigo misma."
+			}
+		}
+	]
+}

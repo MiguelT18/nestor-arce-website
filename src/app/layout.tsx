@@ -12,14 +12,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 	children,
+	mainClass,
 }: Readonly<{
 	children: React.ReactNode;
+	mainClass?: string;
 }>) {
 	return (
 		<html data-theme="dark" lang="es">
 			<body className={`${inter.className} overflow-x-hidden`}>
 				<NavbarComponent />
-				<main className="pt-40">{children}</main>
+				<main className={`${mainClass ? mainClass : "pt-40"}`}>{children}</main>
 			</body>
 		</html>
 	);
