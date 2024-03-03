@@ -10,13 +10,12 @@ export const metadata: Metadata = {
 	description: "Hey there! I'm your new personal trainer, are you ready? 😾",
 };
 
-export default function RootLayout({
-	children,
-	mainClass,
-}: Readonly<{
+interface RootLayoutProps {
 	children: React.ReactNode;
 	mainClass?: string;
-}>) {
+}
+
+export default function RootLayout({ children, mainClass }: RootLayoutProps) {
 	return (
 		<html data-theme="dark" lang="es">
 			<body className={`${inter.className} overflow-x-hidden`}>

@@ -7,7 +7,7 @@
 		{
 			"branding": "Ayudamos a personas y culturistas naturales a alcanzar sus metas de entrenamiento",
 			"about": {
-				"title": "Quién soy?",
+				"title": "Quién soy...?",
 				"description": "Soy tu nuevo entrenador personal y me dedico a mejorar el cuerpo de los ganadores de una manera inimaginable. Cuento con bastantes casos de alumnos de los cuales tuvieron increíbles cambios físicos en un corto tiempo siguiendo mis programas de asesorías. A través de mis años de experiencia y aprendizaje diseñé los programas más efectivos para que las personas mejoren su fisico en el menor tiempo posible."
 			},
 			"social_media": {
@@ -55,17 +55,20 @@
 						{
 							"id": 0,
 							"icon": "arcticons:lets-go-fitness",
-							"title": "Un cuerpo más estético"
+							"title": "Un cuerpo más estético",
+							"description": "Conseguirás un cuerpo más estético y saludable siguiendo mis programas de entrenamiento."
 						},
 						{
 							"id": 1,
-							"icon": "icon-park-outline:fitness",
-							"title": "Más fuerza y resistencia"
+							"icon": "arcticons:fast-n-fitness",
+							"title": "Más fuerza y resistencia",
+							"description": "Conseguirás más fuerza y resistencia siguiendo mis programas de entrenamiento."
 						},
 						{
 							"id": 2,
 							"icon": "arcticons:homewizard-energy",
-							"title": "Más energía y vitalidad"
+							"title": "Más energía y vitalidad",
+							"description": "Conseguirás más energía y vitalidad siguiendo mis programas de entrenamiento."
 						}
 					]
 				}

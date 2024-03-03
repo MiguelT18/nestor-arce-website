@@ -42,7 +42,7 @@ export default function NavbarComponent() {
 					/>
 				</Link>
 
-				<ul className="font-medium text-white max-sm:hidden flex gap-2 items-center text-sm">
+				<ul className="font-medium text-white max-md:hidden flex gap-2 items-center text-sm">
 					<li>
 						<Link
 							href="/"
@@ -91,7 +91,7 @@ export default function NavbarComponent() {
 				</ul>
 
 				{/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-				<button onClick={toggleMenu} className="text-white sm:hidden p-2">
+				<button onClick={toggleMenu} className="text-white md:hidden p-2">
 					{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

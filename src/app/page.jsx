@@ -42,7 +42,7 @@ export default function Home() {
 						src={HomeImage}
 						alt="Personal Trainer"
 					/>
-					<div className="[&>h2]:uppercase [&>h2]:text-md [&>h2]:mb-3 [&>p]:text-sm [&>p]:font-light w-full max-w-[580px] mx-auto">
+					<div className="[&>h2]:font-medium [&>h2]:uppercase [&>h2]:text-md [&>h2]:mb-3 [&>p]:text-sm [&>p]:font-light w-full max-w-[580px] mx-auto">
 						<h2>{homeData.about.title}</h2>
 						<p>{homeData.about.description}</p>
 					</div>
@@ -69,7 +69,7 @@ export default function Home() {
 				<div className="w-full max-w-[1080px] mx-auto flex gap-8 max-md:flex-col [&>article]:mx-auto [&>article]:w-full [&>article]:max-w-[320px] [&>article]:bg-[#490b0a] [&>article]:px-6 [&>article]:py-4 [&>article>p]:text-sm">
 					{homeData.remarketing.card.map((card) => (
 						<article key={card.id}>
-							<iconify-icon icon={card.icon} width="54" height="54" />
+							<iconify-icon icon={card.icon} width="60" height="60" />
 							<h2 className="text-sm uppercase font-medium mt-2 mb-2">
 								{card.title}
 							</h2>
@@ -82,18 +82,21 @@ export default function Home() {
 			<hr className="mt-14 mb-16 w-full max-w-[70%] mx-auto" />
 
 			<section>
-				<h1 className="text-lg text-center uppercase font-medium">
+				<h1 className="text-lg text-center uppercase font-medium px-4">
 					{homeData.remarketing.cta.title}
 				</h1>
 
 				<div className="w-full max-w-[1080px] mx-auto flex flex-wrap">
 					{homeData.remarketing.cta.list.map((item) => (
 						<div
-							className="[&>h2]:text-md [&>h2]:font-light flex flex-col items-center w-full max-w-[320px] mx-auto py-8 px-4 gap-4 text-center"
+							className="flex flex-col items-center w-full max-w-[320px] mx-auto py-8 px-4 gap-4 text-center"
 							key={item.id}
 						>
-							<iconify-icon icon={item.icon} width="54" height="54" />
-							<h2>{item.title}</h2>
+							<iconify-icon icon={item.icon} width="80" height="80" />
+							<div className="[&>h2]:text-sm [&>h2]:font-bold [&>h2]:uppercase [&>p]:text-sm flex flex-col gap-2">
+								<h2>{item.title}</h2>
+								<p>{item.description}</p>
+							</div>
 						</div>
 					))}
 				</div>
