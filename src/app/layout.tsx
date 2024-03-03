@@ -11,17 +11,14 @@ export const metadata: Metadata = {
 	description: "Hey there! I'm your new personal trainer, are you ready? 😾",
 };
 
-interface RootLayoutProps {
-	children: React.ReactNode;
-	mainClass?: string;
-}
-
-export default function RootLayout({ children, mainClass }: RootLayoutProps) {
+export default function RootLayout({
+	children,
+}: { children: React.ReactNode }) {
 	return (
 		<html data-theme="dark" lang="es">
 			<body className={`${inter.className} overflow-x-hidden`}>
 				<NavbarComponent />
-				<main className={`${mainClass ? mainClass : "pt-40"}`}>{children}</main>
+				<main className="pt-40">{children}</main>
 			</body>
 		</html>
 	);
