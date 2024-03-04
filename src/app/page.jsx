@@ -47,7 +47,7 @@ export default function Home() {
 						src={HomeImage}
 						alt="Personal Trainer"
 					/>
-					<div className="[&>h2]:font-medium [&>h2]:uppercase [&>h2]:text-md [&>h2]:mb-3 [&>p]:text-sm [&>p]:font-light w-full max-w-[580px] mx-auto">
+					<div className="[&>h2]:font-medium [&>h2]:uppercase [&>h2]:text-lg [&>h2]:mb-3 [&>p]:text-sm [&>p]:font-light w-full max-w-[580px] mx-auto">
 						<h2>{homeData.about.title}</h2>
 						<p>{homeData.about.description}</p>
 					</div>
@@ -120,7 +120,7 @@ export default function Home() {
 					loop={true}
 					autoplay={{
 						delay: 2500,
-						disableOnInteraction: false,
+						disableOnInteraction: true,
 					}}
 					modules={[EffectFlip, Pagination, Autoplay]}
 				>
@@ -136,6 +136,33 @@ export default function Home() {
 						</SwiperSlide>
 					))}
 				</Swiper>
+			</section>
+
+			<hr className="mt-14 mb-10 w-full max-w-[70%] mx-auto" />
+
+			<section className="w-full [&>h1]:text-center [&>h1]:text-lg [&>h1]:uppercase [&>h1]:font-bold [&>h1]:pb-8">
+				<h1>¿Qué opinan de mi?</h1>
+
+				<div className="overflow-hidden">
+					<div className="flex gap-4 mt-6 animate-slide">
+						{homeData.testimonials.comments.map((comment) => (
+							<article
+								className="w-full max-w-[400px] bg-[#490b0a]/60 relative px-5 pb-5 pt-14 text-center text-sm [&>h2]:uppercase [&>h2]:text-md [&>h2]:font-bold [&>h2]:py-2 [&>span]:text-[#b3b3b3] hover:[&>span]:underline [&>span]:cursor-pointer [&>span]:text-sm"
+								key={comment.id}
+							>
+								{/* eslint-disable-next-line @next/next/no-img-element */}
+								<img
+									className="absolute w-[70px] h-[70px] rounded-full top-[-30px] left-1/2 transform -translate-x-1/2 border-2 border-white"
+									src={comment.profile}
+									alt="User Profile"
+								/>
+								<p>{comment.post}</p>
+								<h2>{comment.name}</h2>
+								<span>{comment.username}</span>
+							</article>
+						))}
+					</div>
+				</div>
 			</section>
 		</>
 	);

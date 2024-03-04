@@ -17,4 +17,5 @@ const config: Config = {
 	},
 	plugins: [nextui()],
 };
+
 export default config;

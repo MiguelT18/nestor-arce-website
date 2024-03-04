@@ -74,7 +74,7 @@ export default function NavbarComponent() {
 										href="/asesoria/asesoria-online"
 										className="hover:bg-[#3f3f46] block px-4 py-2 rounded-t-md transition-all"
 									>
-										Asesoría Online
+										Online
 									</Link>
 								</li>
 								<li>
@@ -82,7 +82,7 @@ export default function NavbarComponent() {
 										href="/asesoria/asesoria-presencial"
 										className="hover:bg-[#3f3f46] block px-4 py-2 rounded-b-md transition-all"
 									>
-										Asesoría Presencial
+										Presencial
 									</Link>
 								</li>
 							</ul>

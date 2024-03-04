@@ -99,6 +99,50 @@
 						"id": 6,
 						"src": "/images/antes_despues/6_antes_despues.png"
 					}
+				],
+				"comments": [
+					{
+						"id": 1,
+						"name": "John Doe",
+						"username": "@johndoe",
+						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
+						"profile": "https://randomuser.me/api/portraits/men/3.jpg"
+					},
+					{
+						"id": 2,
+						"name": "Jane Doe",
+						"username": "@janedoe",
+						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
+						"profile": "https://randomuser.me/api/portraits/women/84.jpg"
+					},
+					{
+						"id": 3,
+						"name": "Thomas Edison",
+						"username": "@thomasedison",
+						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
+						"profile": "https://randomuser.me/api/portraits/men/92.jpg"
+					},
+					{
+						"id": 4,
+						"name": "Albert Einstein",
+						"username": "@alberteinstein",
+						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
+						"profile": "https://randomuser.me/api/portraits/men/68.jpg"
+					},
+					{
+						"id": 5,
+						"name": "Nikola Tesla",
+						"username": "@nikolatesla",
+						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
+						"profile": "https://randomuser.me/api/portraits/men/58.jpg"
+					},
+					{
+						"id": 6,
+						"name": "Isaac Newton",
+						"username": "@isaacnewton",
+						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
+						"profile": "https://randomuser.me/api/portraits/men/80.jpg"
+					}
 				]
 			}
 		}
