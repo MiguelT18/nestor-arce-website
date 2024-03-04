@@ -1,20 +1,25 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
-import HomeImage from "@/public/images/antes_despues/nestor.jpg";
+import HomeImage from "@/public/images/antes_despues/nestor_1.jpg";
 import UIButton from "@/components/pure/home/Button.jsx";
 import lib from "@/public/lib/brand_info.json";
 import backgroundImage from "@/public/images/random/home_section_background.jpg";
+
+//? ICONS
 import "iconify-icon";
 
-import testimonioImg from "@/public/images/antes_despues/1_testimonio.png";
-
+//? SWIPER SLIDER
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFlip, Pagination, Navigation } from "swiper/modules";
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
+
+// import required modules
+import { EffectFlip, Pagination, Autoplay } from "swiper/modules";
 
 export default function Home() {
 	const homeData = lib.home[1];
@@ -79,7 +84,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<hr className="mt-14 mb-16 w-full max-w-[70%] mx-auto" />
+			<hr className="mt-14 mb-14 w-full max-w-[70%] mx-auto" />
 
 			<section>
 				<h1 className="text-lg text-center uppercase font-medium px-4">
@@ -102,25 +107,36 @@ export default function Home() {
 				</div>
 			</section>
 
-			<hr className="mt-14 mb-16 w-full max-w-[70%] mx-auto" />
+			<hr className="mt-14 mb-10 w-full max-w-[70%] mx-auto" />
 
-			<Swiper
-				effect={"flip"}
-				grabCursor={true}
-				pagination={true}
-				navigation={true}
-				modules={[EffectFlip, Pagination, Navigation]}
-			>
-				<SwiperSlide>
-					<Image src={testimonioImg} alt="Testimonio #1" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image src={testimonioImg} alt="Testimonio #1" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image src={testimonioImg} alt="Testimonio #1" />
-				</SwiperSlide>
-			</Swiper>
+			<section className="w-full relative [&>h1]:text-center [&>h1]:text-lg [&>h1]:uppercase [&>h1]:font-bold [&>h1]:pb-8">
+				<h1>Casos de Éxito</h1>
+
+				<Swiper
+					effect={"flip"}
+					autoHeight={true}
+					grabCursor={true}
+					pagination={true}
+					loop={true}
+					autoplay={{
+						delay: 2500,
+						disableOnInteraction: false,
+					}}
+					modules={[EffectFlip, Pagination, Autoplay]}
+				>
+					{homeData.testimonials.images.map((image) => (
+						<SwiperSlide key={image.id}>
+							<Image
+								className="w-fit mx-auto px-8"
+								width={500}
+								height={500}
+								src={image.src}
+								alt={`Testimonio ${image.id}: Antes y después`}
+							/>
+						</SwiperSlide>
+					))}
+				</Swiper>
+			</section>
 		</>
 	);
 }

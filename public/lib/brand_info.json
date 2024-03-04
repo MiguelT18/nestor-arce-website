@@ -14,13 +14,13 @@
 				"title": "Sígueme en mis Redes Sociales",
 				"url": [
 					{
-						"id": 0,
+						"id": 1,
 						"icon": "logos:tiktok-icon",
 						"title": "Instagram",
 						"url": "https://www.instagram.com/nestor_arcen/"
 					},
 					{
-						"id": 1,
+						"id": 2,
 						"icon": "skill-icons:instagram",
 						"title": "TikTok",
 						"url": "https://www.tiktok.com/@nestorcoach"
@@ -31,41 +31,41 @@
 				"title": "Seguramente te encuentras en una de estas situaciones",
 				"card": [
 					{
-						"id": 0,
+						"id": 1,
 						"icon": "mingcute:time-fill",
 						"title": "No tienes tiempo para ir al gimnasio",
 						"description": "No te preocupes, tengo programas de entrenamiento que puedes hacer en casa o en el parque."
 					},
 					{
-						"id": 1,
+						"id": 2,
 						"icon": "game-icons:chicken",
 						"title": "Eres una gallina y no te levantas temprano",
 						"description": "Aún no conoces la importancia de levantarse temprano y por eso sigues siendo el mismo fracasado de siempre."
 					},
 					{
-						"id": 2,
+						"id": 3,
 						"icon": "game-icons:fat",
 						"title": "Sigues perdiendo tu tiempo",
-						"description": "¿Cómo pretendes alcanzar el cuerpo de tus sueños si sigues comiendo la misma basura de siempre...?"
+						"description": "¿Cómo pretendes alcanzar el cuerpo de tus sueños si sigues comiendo la misma basura de siempre?"
 					}
 				],
 				"cta": {
 					"title": "Mi objetivo es ayudarte a conseguir",
 					"list": [
 						{
-							"id": 0,
+							"id": 1,
 							"icon": "arcticons:lets-go-fitness",
 							"title": "Un cuerpo más estético",
 							"description": "Conseguirás un cuerpo más estético y saludable siguiendo mis programas de entrenamiento."
 						},
 						{
-							"id": 1,
+							"id": 2,
 							"icon": "arcticons:fast-n-fitness",
 							"title": "Más fuerza y resistencia",
 							"description": "Conseguirás más fuerza y resistencia siguiendo mis programas de entrenamiento."
 						},
 						{
-							"id": 2,
+							"id": 3,
 							"icon": "arcticons:homewizard-energy",
 							"title": "Más energía y vitalidad",
 							"description": "Conseguirás más energía y vitalidad siguiendo mis programas de entrenamiento."
@@ -74,8 +74,32 @@
 				}
 			},
 			"testimonials": {
-				"name": "Ana María",
-				"description": "Gracias a los programas de entrenamiento de Nestor, he logrado tener un cuerpo más estético y saludable. Ahora me siento más segura y feliz conmigo misma."
+				"images": [
+					{
+						"id": 1,
+						"src": "/images/antes_despues/1_antes_despues.png"
+					},
+					{
+						"id": 2,
+						"src": "/images/antes_despues/2_antes_despues.png"
+					},
+					{
+						"id": 3,
+						"src": "/images/antes_despues/3_antes_despues.png"
+					},
+					{
+						"id": 4,
+						"src": "/images/antes_despues/4_antes_despues.png"
+					},
+					{
+						"id": 5,
+						"src": "/images/antes_despues/5_antes_despues.png"
+					},
+					{
+						"id": 6,
+						"src": "/images/antes_despues/6_antes_despues.png"
+					}
+				]
 			}
 		}
 	]

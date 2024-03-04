@@ -31,12 +31,12 @@ export default function NavbarComponent() {
 
 	return (
 		<>
-			<nav className="w-full h-fit bg-black bg-opacity-30 backdrop-blur-md fixed flex items-center justify-around boder:border-b-2  boder:border-black border-b-2 border-white">
+			<nav className="w-full h-fit bg-black bg-opacity-30 backdrop-blur-md fixed z-40 flex items-center justify-around boder:border-b-2  boder:border-black border-b-2 border-white">
 				<Link href="/">
 					<Image
 						priority={false}
-						width={100}
-						height={100}
+						width={128}
+						height={128}
 						src={Logo}
 						alt="Brand Logo"
 					/>

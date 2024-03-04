@@ -12,15 +12,11 @@ html[data-theme="light"] {
     color: black;
 }
 
-.swiper {
-    max-width: 250px;
-    max-height: 250px;
-    padding: 50px;
+.swiper-pagination {
+    position: static !important;
+    padding-top: 18px;
 }
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    max-width: 250px;
-    max-height: 250px;
+.swiper-pagination-bullet {
+    background-color: #ca201d !important;
 }
