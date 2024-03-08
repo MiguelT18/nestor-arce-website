@@ -1,150 +1,148 @@
 {
-	"home": [
-		{
-			"title": "Inicio",
-			"url": "/"
-		},
-		{
-			"branding": "Ayudamos a personas y culturistas naturales a alcanzar sus metas de entrenamiento",
-			"about": {
-				"title": "Quién soy...?",
-				"description": "Soy tu nuevo entrenador personal y me dedico a mejorar el cuerpo de los ganadores de una manera inimaginable. Cuento con bastantes casos de alumnos de los cuales tuvieron increíbles cambios físicos en un corto tiempo siguiendo mis programas de asesorías. A través de mis años de experiencia y aprendizaje diseñé los programas más efectivos para que las personas mejoren su fisico en el menor tiempo posible."
-			},
-			"social_media": {
-				"title": "Sígueme en mis Redes Sociales",
-				"url": [
-					{
-						"id": 1,
-						"icon": "logos:tiktok-icon",
-						"title": "Instagram",
-						"url": "https://www.instagram.com/nestor_arcen/"
-					},
-					{
-						"id": 2,
-						"icon": "skill-icons:instagram",
-						"title": "TikTok",
-						"url": "https://www.tiktok.com/@nestorcoach"
-					}
-				]
-			},
-			"remarketing": {
-				"title": "Seguramente te encuentras en una de estas situaciones",
-				"card": [
-					{
-						"id": 1,
-						"icon": "mingcute:time-fill",
-						"title": "No tienes tiempo para ir al gimnasio",
-						"description": "No te preocupes, tengo programas de entrenamiento que puedes hacer en casa o en el parque."
-					},
-					{
-						"id": 2,
-						"icon": "game-icons:chicken",
-						"title": "Eres una gallina y no te levantas temprano",
-						"description": "Aún no conoces la importancia de levantarse temprano y por eso sigues siendo el mismo fracasado de siempre."
-					},
-					{
-						"id": 3,
-						"icon": "game-icons:fat",
-						"title": "Sigues perdiendo tu tiempo",
-						"description": "¿Cómo pretendes alcanzar el cuerpo de tus sueños si sigues comiendo la misma basura de siempre?"
-					}
-				],
-				"cta": {
-					"title": "Mi objetivo es ayudarte a conseguir",
-					"list": [
-						{
-							"id": 1,
-							"icon": "arcticons:lets-go-fitness",
-							"title": "Un cuerpo más estético",
-							"description": "Conseguirás un cuerpo más estético y saludable siguiendo mis programas de entrenamiento."
-						},
-						{
-							"id": 2,
-							"icon": "arcticons:fast-n-fitness",
-							"title": "Más fuerza y resistencia",
-							"description": "Conseguirás más fuerza y resistencia siguiendo mis programas de entrenamiento."
-						},
-						{
-							"id": 3,
-							"icon": "arcticons:homewizard-energy",
-							"title": "Más energía y vitalidad",
-							"description": "Conseguirás más energía y vitalidad siguiendo mis programas de entrenamiento."
-						}
-					]
-				}
-			},
-			"testimonials": {
-				"images": [
-					{
-						"id": 1,
-						"src": "/images/antes_despues/1_antes_despues.png"
-					},
-					{
-						"id": 2,
-						"src": "/images/antes_despues/2_antes_despues.png"
-					},
-					{
-						"id": 3,
-						"src": "/images/antes_despues/3_antes_despues.png"
-					},
-					{
-						"id": 4,
-						"src": "/images/antes_despues/4_antes_despues.png"
-					},
-					{
-						"id": 5,
-						"src": "/images/antes_despues/5_antes_despues.png"
-					},
-					{
-						"id": 6,
-						"src": "/images/antes_despues/6_antes_despues.png"
-					}
-				],
-				"comments": [
-					{
-						"id": 1,
-						"name": "John Doe",
-						"username": "@johndoe",
-						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
-						"profile": "https://randomuser.me/api/portraits/men/3.jpg"
-					},
-					{
-						"id": 2,
-						"name": "Jane Doe",
-						"username": "@janedoe",
-						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
-						"profile": "https://randomuser.me/api/portraits/women/84.jpg"
-					},
-					{
-						"id": 3,
-						"name": "Thomas Edison",
-						"username": "@thomasedison",
-						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
-						"profile": "https://randomuser.me/api/portraits/men/92.jpg"
-					},
-					{
-						"id": 4,
-						"name": "Albert Einstein",
-						"username": "@alberteinstein",
-						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
-						"profile": "https://randomuser.me/api/portraits/men/68.jpg"
-					},
-					{
-						"id": 5,
-						"name": "Nikola Tesla",
-						"username": "@nikolatesla",
-						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
-						"profile": "https://randomuser.me/api/portraits/men/58.jpg"
-					},
-					{
-						"id": 6,
-						"name": "Isaac Newton",
-						"username": "@isaacnewton",
-						"post": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía.",
-						"profile": "https://randomuser.me/api/portraits/men/80.jpg"
-					}
-				]
-			}
-		}
-	]
+  "home": [
+    {
+      "title": "Inicio",
+      "url": "/"
+    },
+    {
+      "branding": "Ayudamos a personas y culturistas naturales a alcanzar sus metas de entrenamiento",
+      "about": {
+        "title": "Quién soy...?",
+        "description": "Soy tu nuevo entrenador personal y me dedico a mejorar el cuerpo de los ganadores de una manera inimaginable. Cuento con bastantes casos de alumnos de los cuales tuvieron increíbles cambios físicos en un corto tiempo siguiendo mis programas de asesorías. A través de mis años de experiencia y aprendizaje diseñé los programas más efectivos para que las personas mejoren su fisico en el menor tiempo posible."
+      },
+      "social_media": {
+        "title": "Sígueme en mis Redes Sociales",
+        "url": [
+          {
+            "id": 1,
+            "icon": "logos:tiktok-icon",
+            "title": "Instagram",
+            "url": "https://www.instagram.com/nestor_arcen/"
+          },
+          {
+            "id": 2,
+            "icon": "skill-icons:instagram",
+            "title": "TikTok",
+            "url": "https://www.tiktok.com/@nestorcoach"
+          }
+        ]
+      },
+      "remarketing": {
+        "title": "Seguramente te encuentras en una de estas situaciones",
+        "card": [
+          {
+            "id": 1,
+            "icon": "mingcute:time-fill",
+            "title": "No tienes tiempo para ir al gimnasio",
+            "description": "No te preocupes, tengo programas de entrenamiento que puedes hacer en casa o en el parque."
+          },
+          {
+            "id": 2,
+            "icon": "game-icons:chicken",
+            "title": "Eres una gallina y no te levantas temprano",
+            "description": "Aún no conoces la importancia de levantarse temprano y por eso sigues siendo el mismo fracasado de siempre."
+          },
+          {
+            "id": 3,
+            "icon": "game-icons:fat",
+            "title": "Sigues perdiendo tu tiempo",
+            "description": "¿Cómo pretendes alcanzar el cuerpo de tus sueños si sigues comiendo la misma basura de siempre?"
+          }
+        ],
+        "cta": {
+          "title": "Mi objetivo es ayudarte a conseguir",
+          "list": [
+            {
+              "id": 1,
+              "icon": "arcticons:lets-go-fitness",
+              "title": "Un cuerpo más estético",
+              "description": "Conseguirás un cuerpo más estético y saludable siguiendo mis programas de entrenamiento."
+            },
+            {
+              "id": 2,
+              "icon": "arcticons:fast-n-fitness",
+              "title": "Más fuerza y resistencia",
+              "description": "Conseguirás más fuerza y resistencia siguiendo mis programas de entrenamiento."
+            },
+            {
+              "id": 3,
+              "icon": "arcticons:homewizard-energy",
+              "title": "Más energía y vitalidad",
+              "description": "Conseguirás más energía y vitalidad siguiendo mis programas de entrenamiento."
+            }
+          ]
+        }
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "username": "@johndoe",
+          "profile": "https://randomuser.me/api/portraits/men/3.jpg",
+          "src": "/images/antes_despues/1_antes_despues.png",
+          "comment": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía."
+        },
+        {
+          "id": 2,
+          "name": "Jane Doe",
+          "username": "@janedoe",
+          "profile": "https://randomuser.me/api/portraits/women/84.jpg",
+          "src": "/images/antes_despues/2_antes_despues.png",
+          "comment": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía."
+        },
+        {
+          "id": 3,
+          "name": "Thomas Edison",
+          "username": "@thomasedison",
+          "profile": "https://randomuser.me/api/portraits/men/92.jpg",
+          "src": "/images/antes_despues/3_antes_despues.png",
+          "comment": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía."
+        },
+        {
+          "id": 4,
+          "name": "Albert Einstein",
+          "username": "@alberteinstein",
+          "profile": "https://randomuser.me/api/portraits/men/68.jpg",
+          "src": "/images/antes_despues/4_antes_despues.png",
+          "comment": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía."
+        },
+        {
+          "id": 5,
+          "name": "Nikola Tesla",
+          "username": "@nikolatesla",
+          "profile": "https://randomuser.me/api/portraits/men/58.jpg",
+          "src": "/images/antes_despues/5_antes_despues.png",
+          "comment": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía."
+        },
+        {
+          "id": 6,
+          "name": "Isaac Newton",
+          "username": "@isaacnewton",
+          "profile": "https://randomuser.me/api/portraits/men/80.jpg",
+          "src": "/images/antes_despues/6_antes_despues.png",
+          "comment": "Gracias a los programas de entrenamiento de Nestor pude mejorar mi físico en un corto tiempo. Ahora me siento más fuerte y con más energía."
+        }
+      ],
+      "ebooks": [
+        {
+          "id": 1,
+          "title": "La biblia de la hipertrofia",
+          "description": "Conoce los secretos de la biblia de la hipertrofia y conviértete en una bestia entrenando",
+          "src": "/images/random/ebook-logo.png"
+        },
+        {
+          "id": 2,
+          "title": "El libro secreto de los mamados",
+          "description": "Conoce los secretos de la biblia de la hipertrofia y conviértete en una bestia entrenando",
+          "src": "/images/random/ebook-logo.png"
+        },
+        {
+          "id": 3,
+          "title": "Cómo usar chochos",
+          "description": "Conoce los secretos de la biblia de la hipertrofia y conviértete en una bestia entrenando",
+          "src": "/images/random/ebook-logo.png"
+        }
+      ]
+    }
+  ]
 }

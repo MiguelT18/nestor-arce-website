@@ -3,38 +3,24 @@
 @tailwind utilities;
 
 html[data-theme="dark"] {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 html[data-theme="light"] {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .swiper-pagination {
-    position: static !important;
-    padding-top: 18px;
+  position: static !important;
+  padding-top: 18px;
 }
 
 .swiper-pagination-bullet {
-    background-color: #ca201d !important;
+  background-color: #ca201d !important;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-.animate-slide {
-    animation: slide 10s linear infinite;
-}
+/* #testimonial-comments {
+  width: fit-content !important;
+} */
