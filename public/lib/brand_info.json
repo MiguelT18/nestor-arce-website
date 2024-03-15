@@ -2,7 +2,7 @@
   "home": [
     {
       "title": "Inicio",
-      "url": "/"
+      "path": "/"
     },
     {
       "branding": "Ayudamos a personas y culturistas naturales a alcanzar sus metas de entrenamiento",
@@ -141,6 +141,48 @@
           "title": "Cómo usar chochos",
           "description": "Conoce los secretos de la biblia de la hipertrofia y conviértete en una bestia entrenando",
           "src": "/images/random/ebook-logo.png"
+        }
+      ]
+    }
+  ],
+  "recursos": [
+    {
+      "title": "Recursos",
+      "path": "/recursos"
+    },
+    {
+      "webinars": [
+        {
+          "id": 1,
+          "title": "Conversando con algunos expertos",
+          "description": "Conoce los secretos de la hipertrofia y conviértete en una bestia entrenando."
+        },
+        {
+          "id": 2,
+          "title": "Preguntas y Respuestas",
+          "description": "Contestando las preguntas más frecuentes de mi alumnos, conoce lo que opinan los demás."
+        },
+        {
+          "id": 3,
+          "title": "Diagnosticando un caso",
+          "description": "Analizando casos de mis alumnos y aconsejando sabiamente."
+        }
+      ],
+      "ebooks": [
+        {
+          "id": 1,
+          "title": "La biblia de la hipertrofia",
+          "description": "Conoce los secretos de la biblia de la hipertrofia y conviértete en una bestia entrenando"
+        },
+        {
+          "id": 2,
+          "title": "El libro secreto de los mamados",
+          "description": "Conoce los secretos de la biblia de la hipertrofia y conviértete en una bestia entrenando"
+        },
+        {
+          "id": 3,
+          "title": "Cómo usar chochos",
+          "description": "Conoce los secretos de la biblia de la hipertrofia y conviértete en una bestia entrenando"
         }
       ]
     }

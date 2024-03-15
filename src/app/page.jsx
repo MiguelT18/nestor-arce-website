@@ -1,57 +1,39 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
+"use client"
 
-import React, { useState } from "react";
-import Image from "next/image";
-import HomeImage from "@/public/images/antes_despues/nestor_1.jpg";
-import { ButtonAnchor, ButtonLink } from "@/components/pure/home/Button.jsx";
-import lib from "@/public/lib/brand_info.json";
-import backgroundImage from "@/public/images/random/home_section_background.jpg";
-import Logo from "@/public/images/nestor_logo.png";
+import React, { useState } from "react"
+import HomeImage from "@/public/images/antes_despues/nestor_1.jpg"
+import { ButtonAnchor } from "@/components/pure/home/Button.jsx"
+import lib from "@/public/lib/brand_info.json"
+import backgroundImage from "@/public/images/random/home_section_background.jpg"
+import Logo from "@/public/images/nestor_logo.png"
+
+import Image from "next/image"
+
+import Form from "@/components/pure/Form"
+import EbookImg from "@/public/images/random/ebook-logo.png"
 
 // ? MATERIAL UI
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
-import TextField from "@mui/material/TextField";
+import ImageList from "@mui/material/ImageList"
+import ImageListItem from "@mui/material/ImageListItem"
+import ImageListItemBar from "@mui/material/ImageListItemBar"
 
 //? ICONS
-import "iconify-icon";
+import "iconify-icon"
 
 //? SWIPER SLIDER
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react"
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-flip";
-import "swiper/css/pagination";
+import "swiper/css"
+import "swiper/css/effect-flip"
+import "swiper/css/pagination"
 
 // import required modules
-import { EffectFlip, Pagination, Autoplay } from "swiper/modules";
+import { EffectFlip, Pagination, Autoplay } from "swiper/modules"
 
 export default function Home() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
-  const homeData = lib.home[1];
-
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "fit-content",
-    maxWidth: "600px",
-    bgcolor: "#000",
-    border: "2px solid #FF7400",
-    borderRadius: "16px",
-    boxShadow: 24,
-    p: 4,
-  };
+  const homeData = lib.home[1]
 
   return (
     <>
@@ -239,78 +221,22 @@ export default function Home() {
       <section className="[&>h1]:px-4 [&>h1]:text-center [&>h1]:text-lg [&>h1]:uppercase [&>h1]:font-bold [&>h1]:pb-8">
         <h1>¡Obtén tu E-Book Gratis!</h1>
 
-        <article className="flex flex-wrap justify-center gap-10 mx-5 mb-14">
+        <article className="flex flex-wrap justify-center items-start gap-10 mx-5 mb-14">
           {homeData.ebooks.map((item) => (
-            <figure
-              className="bg-[#490b0a]/60 py-5 px-3 flex flex-col items-center border-2 border-white rounded-xl w-fit max-w-[400px] [&>h2]:mb-2 [&>h2]:mt-4 [&>h2]:text-center [&>h2]:text-sm [&>h2]:uppercase [&>h2]:font-bold [&>p]:mb-4 [&>p]:text-sm [&>p]:text-center [&>p]:font-light"
+            <Form
               key={item.id}
-            >
-              <Image
-                className="w-fit mx-auto"
-                src={item.src}
-                alt="free ebook for everyone"
-                width={80}
-                height={80}
-              />
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-              <button
-                className="text-sm w-fit bg-white hover:bg-gray-300 hover:scale-105 uppercase font-bold transition-all rounded-md text-black px-4 py-2"
-                type="button"
-                onClick={handleOpen}
-              >
-                Lo quiero ya!
-              </button>
-            </figure>
+              formData={{
+                cardImage: EbookImg,
+                cardTitle: item.title,
+                cardDescription: item.description,
+                cardTextButton: "Descargar",
+                modalDescription:
+                  "Llena el siguiente formulario con tus datos necesarios y te enviaremos un correo con el libro PDF listo para que lo descargues.",
+              }}
+            />
           ))}
-
-          <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-          >
-            <Box className="flex flex-col px-5" sx={style} data-theme="light">
-              <Typography
-                className="uppercase text-center font-bold mb-2"
-                id="modal-modal-title"
-                variant="h5"
-                component="h2"
-              >
-                Llena con tus datos
-              </Typography>
-
-              <Box
-                className="flex max-md:flex-col justify-center"
-                component="form"
-                sx={{
-                  "& > :not(style)": { m: 1, width: "25ch" },
-                }}
-                noValidate
-                autoComplete="off"
-              >
-                <TextField
-                  id="standard-basic"
-                  label="Tu primer nombre"
-                  variant="standard"
-                />
-                <TextField
-                  id="standard-basic"
-                  label="Tu correo electrónico"
-                  variant="standard"
-                />
-              </Box>
-
-              <button
-                className="bg-[#490b0a] text-white px-4 py-2 mt-4 rounded-md text-sm w-full"
-                type="button"
-              >
-                Enviar
-              </button>
-            </Box>
-          </Modal>
         </article>
       </section>
     </>
-  );
+  )
 }
