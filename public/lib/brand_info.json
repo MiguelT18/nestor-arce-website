@@ -186,5 +186,67 @@
         }
       ]
     }
+  ],
+  "asesoria_online": [
+    {
+      "title": "Asesoría Online",
+      "path": "/asesoria/asesoria-online"
+    },
+    {
+      "about_service": {
+        "title": "¿En qué consiste este servicio?",
+        "service_cards": [
+          {
+            "id": 1,
+            "icon": "akar-icons:zoom-fill",
+            "subtitle": "Uno a Uno",
+            "description": "Tendrás asesorías uno a uno conmigo 2 veces a la semana en donde podré responder todas tus dudas y darle un seguimiento a tu proceso de cambio."
+          },
+          {
+            "id": 2,
+            "icon": "fluent-mdl2:diet-plan-notebook",
+            "subtitle": "Dieta Personalizada",
+            "description": "Tendrás acceso a una dieta específica para tí con toda la información que necesitas para cambiar tu alimentación hacia una vida más saludable."
+          },
+          {
+            "id": 3,
+            "icon": "iconoir:community",
+            "subtitle": "Grupo VIP",
+            "description": "Tendrás acceso a nuestra comunidad de miembros VIP en donde entre todos compartimos nuestras dudas y realizamos eventos cada tanto."
+          }
+        ]
+      }
+    }
+  ],
+  "asesoria_presencial": [
+    {
+      "title": "Asesoría Presencial",
+      "path": "/asesoria/asesoria-presencial"
+    },
+    {
+      "about_service": {
+        "title": "¿En qué consiste este servicio?",
+        "service_cards": [
+          {
+            "id": 1,
+            "icon": "akar-icons:zoom-fill",
+            "subtitle": "Uno a Uno",
+            "description": "Tendrás asesorías uno a uno conmigo 2 veces a la semana en donde podré responder todas tus dudas y darle un seguimiento a tu proceso de cambio."
+          },
+          {
+            "id": 2,
+            "icon": "fluent-mdl2:diet-plan-notebook",
+            "subtitle": "Dieta Personalizada",
+            "description": "Tendrás acceso a una dieta específica para tí con toda la información que necesitas para cambiar tu alimentación hacia una vida más saludable."
+          },
+          {
+            "id": 3,
+            "icon": "iconoir:community",
+            "subtitle": "Grupo VIP",
+            "description": "Tendrás acceso a nuestra comunidad de miembros VIP en donde entre todos compartimos nuestras dudas y realizamos eventos cada tanto."
+          }
+        ]
+      }
+    }
   ]
 }

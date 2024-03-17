@@ -40,7 +40,9 @@
     ".next/types/**/*.ts",
     "src/app/page.jsx",
     "src/components/pure/home/Button.jsx",
-    "src/app/recursos/page.jsx"
+    "src/app/recursos/page.jsx",
+    "src/app/asesoria/asesoria-online/page.jsx",
+    "src/app/asesoria/asesoria-presencial/page.jsx"
   ],
   "exclude": [
     "node_modules"
